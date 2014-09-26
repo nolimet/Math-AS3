@@ -55,7 +55,7 @@ package opdrachten.ClockAnalog
 			wijzerPlaat.y = 377;
 			
 			//textfieldthing
-			text.defaultTextFormat=font
+			text.defaultTextFormat=font;
 			
 			//addchilds
 			addChild(wijzerPlaat);
