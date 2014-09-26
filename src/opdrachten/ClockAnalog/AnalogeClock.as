@@ -89,7 +89,7 @@ package opdrachten.ClockAnalog
 		private function step (e:Event):void
 		{
 			time = new Date;
-			var uur:Number = time.getHours()
+			var uur:Number = time.getHours();
 			if (uur > 12) {uur -=12}
 			UurWijzer.rotation = (((360 / 12) * uur)-90)+(360/12/60*time.getMinutes())+(360/12/60/60*time.getSeconds())+(360/12/60/60/1000*time.getMilliseconds());
 			MinWijzer.rotation = (((360 / 60) * time.getMinutes())-90)+(360/60/60*time.getSeconds())+(360/60/60/1000*time.getMilliseconds());
